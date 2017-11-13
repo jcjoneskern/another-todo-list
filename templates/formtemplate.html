@@ -1,0 +1,12 @@
+<h1>TODO List</h1>
+<p>A place to store the things you have to do!</p>
+<input type="text" placeholder="filter your to dos" ng-model="todos">
+
+<ol>
+    <task-list list="$ctrl.list" todos={{todos}}></task-list>
+</ol>
+
+<form ng-submit="$ctrl.add(newTodo)">
+    <input type="text" placeholder="add your to do" ng-model="newTodo">
+    <button type="submit">add</button>
+</form>

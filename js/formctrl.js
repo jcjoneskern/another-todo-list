@@ -1,8 +1,3 @@
-angular.module("app")
-    .controller("formController", formController);
-
-
-
 function formController($scope) {
     var vm = this;
 
@@ -12,9 +7,7 @@ function formController($scope) {
         vm.list.push(todo);
         $scope.newTodo = "";
     }
-
-    vm.remove = function(todo) {
-        var index = vm.list.indexOf(todo);
-        vm.list.splice(index, 1);
-    }
 }
+
+angular.module("app")
+    .controller("formController", formController);

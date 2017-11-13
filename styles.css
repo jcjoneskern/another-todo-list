@@ -47,3 +47,7 @@ button[type="button"] {
     border: 0;
     float: right;
 }
+
+button:hover {
+    cursor: pointer;
+}

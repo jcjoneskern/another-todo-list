@@ -1,0 +1,2 @@
+    <li hover-state ng-repeat="todo in $ctrl.list | filter: $ctrl.todos track by $index">{{ todo }}
+    <button class="ion-close-round" type="button" ng-click="$ctrl.remove(todo)"></button></li>

@@ -12,22 +12,14 @@
     <script src="js/lib/angular-route.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/formctrl.js"></script>
+    <script src="js/components/taskform.js"></script>
+    <script src="js/components/tasklist.js"></script>
+    <script src="js/components/hoverstate.js"></script>
 </head>
-<body ng-controller="formController as form">
+<body>
 
     <main>
-        <h1>TODO List</h1>
-        <p>A place to store the things you have to do!</p>
-        <input type="text" placeholder="filter your to dos" ng-model="todos">
-
-        <ol>
-            <li ng-repeat="todo in form.list | filter: todos track by $index">{{ todo }} <button class="ion-close-round" type="button" ng-click="form.remove(todo)"></button></li>
-        </ol>
-
-        <form ng-submit="form.add(newTodo)">
-            <input type="text" placeholder="add your to do" ng-model="newTodo">
-            <button type="submit">add</button>
-        </form>
+        <task-form></task-form>
     </main>
 
 </body>
