@@ -1,5 +1,5 @@
 function svc() {
-    var todos = [];
+    var todos = ["grocery shop", "laundry", "get gas", "vacuum"];
 
     return {
         setData: function(todoList) {

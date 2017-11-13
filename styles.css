@@ -13,6 +13,7 @@ main {
 
 h1, p, ol {
     margin: 0;
+    font-weight: normal;
 }
 
 li {
@@ -50,4 +51,16 @@ button[type="button"] {
 
 button:hover {
     cursor: pointer;
+}
+
+a {
+    color: #f6bfca;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 0.75em;
+}
+
+#enter {
+    text-align: right;
+    width: 100%;
 }
