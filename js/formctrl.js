@@ -1,4 +1,4 @@
-function formController($scope) {
+function formController($scope, svc) {
     var vm = this;
 
     vm.list = ["grocery shop", "laundry", "get gas", "vacuum"];
@@ -6,6 +6,8 @@ function formController($scope) {
     vm.add = function(todo) {
         vm.list.push(todo);
         $scope.newTodo = "";
+        svc.setData(vm.list);
+        vm.list = svc.getData();
     }
 }
 
