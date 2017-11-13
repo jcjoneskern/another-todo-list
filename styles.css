@@ -1,0 +1,49 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to right, #ee62a4, #ee636c);
+}
+
+main {
+    width: fit-content;
+    margin: 5em auto 0;
+    padding: 1em;
+    background: #fff;
+    border-radius: 5px;
+}
+
+h1, p, ol {
+    margin: 0;
+}
+
+li {
+    padding: 0.25em 0;
+}
+
+input {
+    width: 100%;
+    margin: 1em 0;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #d7d3d4;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #d7d3d4;
+}
+
+button[type="submit"] {
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0.75em;
+    background: #f6bfca;
+}
+
+button[type="button"] {
+    background: none;
+    border: 0;
+    float: right;
+}
